@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Navbar from './components/Navbar'
+
 function App() {
   return (
-    <div className='h-screen w-screen flex justify-center items-center font-bold text-2xl'>Testing Setup</div>
+    <div className='h-screen w-screen overflow-y-auto overflow-x-hidden'>
+      <Navbar />
+    </div>
   )
 }
 
