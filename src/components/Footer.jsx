@@ -3,13 +3,13 @@ import { navLinks } from "@/lib/constants"
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 shadow-[0px_-1px_3px_rgb(0,0,0,0.1)]">
+    <footer className="border-t border-slate-200 shadow-[0px_0px_5px_rgb(0,0,0,0.1)]">
       <div className="mx-auto max-w-6xl px-6 py-10">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <span className="inline-block h-7 w-7 rounded-md bg-teal-600" aria-hidden="true" />
-              <span className="text-lg font-semibold text-slate-900">NeuroDx</span>
+              <span className="text-lg font-semibold text-slate-900">MSDiagnosis</span>
             </div>
             <p className="text-base leading-relaxed text-slate-600">
               Research-focused MS diagnosis UI prototype. Built with React and Tailwind CSS.
@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-base font-semibold text-slate-900 mb-4">Navigation</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {
                 navLinks.map(({ path, label }) => {
                   return <li key={path}>
@@ -33,8 +33,8 @@ export default function Footer() {
 
           <div>
             <h4 className="text-base font-semibold text-slate-900 mb-4">Contact</h4>
-            <ul className="space-y-2">
-              <li className="text-base text-slate-600">Email: hello@neurodx.example</li>
+            <ul className="space-y-3">
+              <li className="text-base text-slate-600">Email: hello@MSDiagnosis.example</li>
               <li className="text-base text-slate-600">Location: Remote-first</li>
               <li className="text-base">
                 <a href="#" className="text-slate-600 hover:text-slate-900 transition-colors">
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-slate-100 text-sm text-slate-500 text-center">
-          © {new Date().getFullYear()} NeuroDx. For research and educational use only.
+          © {new Date().getFullYear()} MSDiagnosis. For research and educational use only.
         </div>
       </div>
     </footer>
