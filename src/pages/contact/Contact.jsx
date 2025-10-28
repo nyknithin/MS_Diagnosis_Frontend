@@ -106,11 +106,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-slate-900">Email</h3>
-                  <p className="text-slate-600">hello@neurodx.example</p>
+                  <p className="text-slate-600">support@msdiagnosis.com</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
@@ -118,7 +118,7 @@ export default function Contact() {
                   <h3 className="font-semibold text-slate-900">Phone</h3>
                   <p className="text-slate-600">+1 (555) 123-4567</p>
                 </div>
-              </div>
+              </div>*/}
 
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg">
@@ -226,7 +226,7 @@ export default function Contact() {
                     <textarea
                       id="message"
                       name="message"
-                      rows={6}
+                      rows={5}
                       value={formData.message}
                       onChange={handleInputChange}
                       className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors resize-none ${
@@ -268,12 +268,12 @@ export default function Contact() {
                 </div>
 
                 {/* Privacy Notice */}
-                <div className="mt-6 p-4 bg-slate-50 rounded-lg">
+                {/* <div className="mt-6 p-4 bg-slate-50 rounded-lg">
                   <p className="text-xs text-slate-600">
                     By submitting this form, you agree to our privacy policy. We'll only use your 
                     information to respond to your inquiry and will never share it with third parties.
                   </p>
-                </div>
+                </div>*/}
               </>
             )}
           </div>
