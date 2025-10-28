@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom"
-import { Brain, Menu, X } from "lucide-react"
-import { useState } from "react"
+import { NavLink } from "react-router-dom";
+import { Brain, Menu, X } from "lucide-react";
+import { useState } from "react";
 
-import { appName, navLinks } from "@/lib/constants"
+import { appName, navLinks } from "@/lib/constants";
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
@@ -14,7 +14,9 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <Brain className="h-7 w-7 text-teal-600 sm:h-8 sm:w-8" />
-            <span className="text-lg font-semibold text-slate-900 sm:text-xl truncate">{appName}</span>
+            <span className="text-lg font-semibold text-slate-900 sm:text-xl truncate">
+              {appName}
+            </span>
           </div>
 
           {/* Desktop Navigation Links */}
@@ -26,7 +28,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `px-3 py-2 rounded-md text-md font-medium transition-colors whitespace-nowrap ${
                     isActive
-                      ? "text-teal-600 bg-teal-50" 
+                      ? "text-teal-600 bg-teal-50 shadow-sm"
                       : "text-slate-600 hover:text-teal-600 hover:bg-slate-50"
                   }`
                 }
@@ -65,7 +67,7 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                       isActive
-                        ? "text-teal-600 bg-teal-50" 
+                        ? "text-teal-600 bg-teal-50"
                         : "text-slate-600 hover:text-teal-600 hover:bg-slate-50"
                     }`
                   }
@@ -78,5 +80,5 @@ export default function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }
