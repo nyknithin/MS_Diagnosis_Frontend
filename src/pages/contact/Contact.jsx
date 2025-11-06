@@ -75,7 +75,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-white">
       {/* Header Section */}
-      <div className="pt-20 pb-16 text-center">
+      <div className="pt-28 pb-16 text-center">
         <h1 className="text-5xl font-bold text-slate-900 mb-6">
           Contact Us
         </h1>
