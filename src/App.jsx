@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './pages/home/home'
 import Diagnosis from './pages/diagnosis/Diagnosis'
 import MSRemedies from './pages/Remidies/MSRemedies'
+import MSConsultation from './pages/consultation/Consultation'
 import Contact from './pages/contact/Contact'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/diagnosis" element={<Diagnosis />} />
         <Route path="/remedies" element={<MSRemedies />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/consultation" element={<MSConsultation />} />
+        {/* <Route path="/contact" element={<Contact />} />*/}
       </Routes>
       <Footer />
     </div>
